@@ -5,7 +5,7 @@
 Download Expo App, Go to the below url and Scan the QrCode
 `https://expo.io/@tifus69/starwars`
 
-Or
+### Or
 
 1. Clone the repository
    `git clone https://github.com/tifus69/starwars-app.git`
