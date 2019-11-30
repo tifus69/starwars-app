@@ -1,7 +1,7 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View, ActivityIndicator } from "react-native";
 
-const Questions = ({ name }) => {
+const Questions = ({ name, loading }) => {
   return (
     <View style={styles.container}>
       <Text style={styles.question}>
@@ -11,7 +11,11 @@ const Questions = ({ name }) => {
       <Text style={styles.question}>
         What character (person) appeared in the most of StarWars films ?
       </Text>
-      <Text style={styles.response}>{name}</Text>
+      {loading ? (
+        <ActivityIndicator size="small" color="yellow" />
+      ) : (
+        <Text style={styles.response}>{name}</Text>
+      )}
       <Text style={styles.question}>
         What species appeared in the most number of StarWars films ?
       </Text>

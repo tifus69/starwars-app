@@ -99,7 +99,7 @@ const Home = () => {
           style={[styles.greenView, animatedStyle]}
         ></Animated.View>
         <ScrollView style={styles.scrollview}>
-          {ready && <Questions name={name} />}
+          {ready && <Questions name={name} loading={loading} />}
         </ScrollView>
       </View>
     </TouchableOpacity>
